@@ -38,9 +38,10 @@ for (let index = 0; index < ticketBtns.length; index++) {
 
             totalPrice = 550 * count;
             document.getElementById("total-price").innerText = totalPrice;
+            document.getElementById("grand-total").innerText = totalPrice;
             e.target.setAttribute("disabled", true);
         }else{
-            alert("You are no avail to select more than four seat in same time");
+            alert("You are no able to select more than four seats at the same time");
         }
 
     });
@@ -61,6 +62,8 @@ function discount()
         document.getElementById("grand-total").innerText = (totalPrice - discountPrice);
         const couponContainer = document.getElementById("coupon-container");
         couponContainer.classList.add("hidden");
+    }else{
+        alert("Please put a valid coupon code");
     }
 }
     
