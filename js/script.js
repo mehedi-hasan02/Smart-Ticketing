@@ -77,3 +77,13 @@ function discount()
 //         alert("Please Input your name and phone number");
 //     }
 // }
+
+function scrollToTop() {
+    // Scroll to the top of the page
+    // window.location.reload();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(function() {
+        window.location.reload();
+    }, 500);
+    
+}
